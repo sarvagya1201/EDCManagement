@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- start css link -->
     <link rel="stylesheet" href="css/animate.css" />
-    \
     <link rel="stylesheet" href="css/bootstrap.css" />
     <!-- <link rel="stylesheet" href="css/font_awesome.css"> -->
     <link rel="stylesheet" href="css/index.css" />
@@ -24,7 +23,94 @@
     <title>EDC Management - IIT (ISM) Dhanbad</title>
   </head>
   <body>
-    <h1 class="text-success">HELLO</h1>
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+      <div class="container-fluid">
+        <img src="img/logo.png" width="60px" alt="" />
+        <a href="#" class="navbar-brand mx-4" style="color: white">
+          EDC Management System
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#myMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="myMenu">
+          <ul class="navbar-nav w-100 justify-content-end">
+            <li class="nav-item text-white">IIT (ISM) Dhanbad</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br /><br /><br />
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- nav tab -->
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a href="#login" class="nav-link active" data-bs-toggle="tab"
+                >Login</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#signup" class="nav-link" data-bs-toggle="tab"
+                >Sign-Up
+              </a>
+            </li>
+          </ul>
+          <!-- nav pane -->
+          <div class="tab-content">
+            <div class="tab-pane mt-3 active" id="login">
+              <form>
+                <input
+                  type="email"
+                  placeholder="Enter your registered Email"
+                  class="mb-3 form-control"
+                />
+                <input
+                  type="password"
+                  placeholder="Enter your password"
+                  class="mb-3 form-control"
+                />
+                <button class="btn btn-primary w-100">Login</button>
+              </form>
+            </div>
+            <div class="tab-pane mt-3" id="signup">
+              <form>
+                <input
+                  type="text"
+                  placeholder="Enter your Name"
+                  class="mb-3 form-control"
+                />
+                <input
+                  type="email"
+                  placeholder="Enter your Email"
+                  class="mb-3 form-control"
+                />
+                <input
+                type="number"
+                placeholder="Enter your Mobile Number"
+                class="mb-3 form-control"
+              />
+                <input
+                  type="password"
+                  placeholder="Create a new Password"
+                  class="mb-3 form-control"
+                />
+                
+                <button class="btn btn-primary w-100">Register</button>
+              </form>
+            </div>
+            
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center col-md-6 mt-5">
+          <img src="img/EDC.jpg" class="w-100" alt="">
+        </div>
+      </div>
+    </div>
 
     <!-- start js link -->
     <script src="js/index.js"></script>
